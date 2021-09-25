@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--sets the doc type to HTML, so the browser knows it is running HTML-->
+<!--Author: Micah Turpin
+email: micturpi@uat.edu-->
+
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css"/> <!--links the CSS stylesheet-->
+      <script src="code.js"></script> <!--links the JavaScript sheet-->
+    <style>
+      body {
+        background-color: white;
+        /*sets the background color of the body on the webpage to white*/
+      }
+
+      img {
+        transition: 0.5s ease; /*sets any transitions on img tags to ease over a period of 0.5 seconds*/
+      }
+
+      img:hover {
+        transform: scale(1.1, 1.1); /*sets the transformation on any images hovered on to scale up to 1.1 times both the width and height*/
+      }
+    </style>
+    <title>
+      Micah Turpin - UATSpace Page <!--sets the title of the webpage-->
+    </title>
+  </head>
+
+  <body>
+    <script>
+      document.write("Today's date is " + Date());
+      /*creates a document.write function that writes out the date of today, using a javascript function*/
+    </script>
+    <br />
+    <br />
+    <!--page break-->
+    <img src="UATspaceLogo.jpg" />
+    <!--sets the image to the space logo-->
+    <h1>UATSpace Page</h1>
+    <!--header on the webpage-->
+    <p>Test of the paragraph tags</p>
+    <!--paragraph on the website-->
+    <br />
+    <div id="countdownStatus">Countdown Status</div> <!--sets Countdown Status div with an id of countdownStatus, to be used in JS code to change the countdown-->
+    <br />
+
+    <button type="button" id="start" onclick="countdownTimer();">Start</button> <!--sets a button with an id of start, in order to start the countdownTimer() function in the JS file when the start button is clicked-->
+    <button type="button" id="stop">Stop</button>
+    <!--creates a stop button-->
+    <br>
+    <br>
+    <br>
+    <!--page breaks-->
+    <div id="dieRes1">Die 1 Status</div> <!--creates a div with the id dieRes1, to be changed to the die result in JS code-->
+    <div id="dieRes2">Die 2 Status</div> <!--creates a div with the id dieRes2, to be changed to the die result in JS code-->
+    <div id="diceSum">Die Sum</div> <!--creates a div with the id diceSum, to display the sum of both dice calculated in JS code-->
+    <div id="crapsStatus">Craps Game Status</div> <!--creates a div that shows the status of the craps game, as determined by calculations in JS code-->
+    <br> <!--page break-->
+    <button onclick="playCraps()" class="button">Play Craps</button> <!--creates a button that will run the playCraps() function from the linked JS file, when the button is clicked-->
+    <div id="sandboxArea">Sanbox Area</div>
+    <button onclick="sandboxRun()">Sandbox</button>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+    Author: Micah Turpin
+    Email: micturpi@uat.edu
+-->
+
+<html> <!---->
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!--links the appropriate css stylesheet-->
+    <script src="login.js"></script> <!--links the appropriate javascript file-->
+    <title>Login - UAT Space Page</title> <!--title of webpage-->
+  </head>
+  <header>
+    <div id="header">
+        <ul>
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="board.html">Board</a></li>
+            <li><a href="login.html">Space Page</a></li>
+        </ul>
+    </div>
+  </header>
+  <body>
+    <div style="text-align: center"> <!--all of the text in the div will be center-aligned-->
+      <p class="text">Welcome to the UAT Space Webpage. Please login. . .</p> <!--Login prompt-->
+      <p id="loginstatus" class="text">Status of login. . .</p> <!--creates a text with an id of loginstatus that will be used to display the status of any login attempts-->
+      <br /> <!--page break to make things look a bit more spread out-->
+      <form id="credsubmit" onsubmit="return false " class="text"> <!--creates a form with the id of credsubmit that will return false, to ensure that no extraneous processes run when the button is clicked-->
+        First Name: <input type="text" id="fname"/> <!--creates an input box for the first name-->
+        Last Name: <input type="text" id="lname"/> <!--creates an input box for the last name-->
+        Badge ID: <input type="number" id="badgeid"/> <!--creates an input box for the badge ID-->
+        <br /> <!--more formatting to make sure that things don't get squished together-->
+        <br />
+        <button class="button" onclick="checkCreds()">Login</button> <!--runs the checkCreds function when the button is clicked-->
+      </form>
+    </div>
+  </body>
+</html>

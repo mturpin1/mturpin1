@@ -1,0 +1,56 @@
+button { /*denotes all button tags in the linked HTML file*/
+    background-color: black; /*sets the background color of all non-active buttons to black*/
+    width: 100px; /*sets the widgth of all non-active buttons to 100 pixels*/
+    height: 30px; /*sets the height of all non-active buttons to 30 pixels*/
+    border-color: rgb(67, 151, 174); /*sets the border color of all non-active buttons to whatever that color is*/
+    border-radius: 10px; /*sets the radius of all non-active buttons to 10 pixels*/
+    color: white; /*sets the color of the text of all non-active buttons to white*/
+    transition: 0.3s ease; /*tells the HTML to executre any animations or transitions/transformations to ease into the change over a period of 0.3 seconds*/
+}
+
+button:hover { /*denotes all button tags in the linked HTML file that are being hovered over, but not clicked*/
+    border-radius: 0px; /*sets the border radius of all hovered buttons to 0 pixels*/
+    border-width: 5px; /*sets the border width of all hovered buttons to 5 pixels*/
+}
+
+body {
+    background-repeat: no-repeat; /*tells the HTML to only put one instance of a background image/graphic, instead of repeating it until out of space*/
+    background-position: center; /*sets the position of the background image/graphic to be in the center of the website, no matter the size*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+}
+
+li a, .drop-btn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover, .drop-btn:hover {
+    transition-duration: .5s;
+    color: black;
+    background-color: #ffffff;
+}
+
+.major, .paragraph {
+    padding-left: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    padding: 14px 16px;
+}
